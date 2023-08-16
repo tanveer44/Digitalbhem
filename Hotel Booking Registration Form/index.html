@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Booking Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Hotel Booking Registration Form</h1>
+    <form id="bookingForm">
+        <h2>Customer Info:</h2>
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" required><br>
+
+        <label for="checkInDate">Check-in Date:</label>
+        <input type="date" id="checkInDate" name="checkInDate" required><br>
+
+        <label for="totalDays">Total No of Days:</label>
+        <input type="number" id="totalDays" name="totalDays" required><br>
+
+        <label for="totalPersons">Total No of Persons:</label>
+        <input type="number" id="totalPersons" name="totalPersons" required><br>
+
+        <h2>Room Information:</h2>
+        <label for="roomType">Room Type:</label>
+        <select id="roomType" name="roomType">
+            <option value="Delux">Delux Room</option>
+            <option value="Suite">Suite Room</option>
+        </select><br>
+
+        <label for="amenities">Amenities:</label>
+        <select id="amenities" name="amenities" multiple>
+            <option value="AC">AC</option>
+            <option value="Locker">Locker</option>
+        </select><br>
+
+        <h2>Advance Payment:</h2>
+        <label for="advanceAmount">Advance Amount:</label>
+        <input type="number" id="advanceAmount" name="advanceAmount"><br>
+
+        <h2>Total Cost Calculation:</h2>
+        <p>Total Room Cost: <span id="totalRoomCost">0</span></p>
+        <p>Total Amenities Cost: <span id="totalAmenitiesCost">0</span></p>
+        <p>Total Cost: <span id="totalCost">0</span></p>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
